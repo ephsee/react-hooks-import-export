@@ -1,5 +1,6 @@
+
 function howManyParks() {
-  console.log("42 parks!");
+  console.log("there are at least 42 parks!");
 }
 
 export default howManyParks;

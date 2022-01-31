@@ -1,8 +1,22 @@
 import React from "react";
-import howManyParks from "./parks/howManyParks";
+import changedTheName from "./parks/howManyParks";
+import MesaVerde from "./parks/MesaVerde";
 
-function ColoradoStateParks() {
-  howManyParks(); // => "42 parks!"
+import { trees, wildlife, elevation } from "./parks/RockyMountain";
 
-  return <h1>Colorado State Parks!</h1>;
+elevation()
+wildlife()
+
+export default function ColoradoStateParks() {
+  changedTheName(); // => "42 parks!"
+  console.log(trees)
+  return (
+    <div>
+      <h1>Colorado State Parks!</h1>
+      <MesaVerde />
+    </div>
+  )
 }
+
+
+//  ColoradoStateParks;
